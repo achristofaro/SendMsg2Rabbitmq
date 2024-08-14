@@ -1,0 +1,39 @@
+{
+    "python.analysis.typeCheckingMode": "basic",
+    "files.exclude":{
+       "**/*.pyc":{
+          "when":"$(basename).py"
+       },
+       "**/__pycache__":true,
+       "**/*.pytest_cache":true
+    },
+    "[python]": {
+      "editor.defaultFormatter": "ms-python.black-formatter",
+      "editor.formatOnSave": true,
+      "editor.codeActionsOnSave": {
+          "source.organizeImports": "explicit"
+      },
+    },
+//    "black-formatter.args": ["-s"],
+    "isort.args": [
+      "--profile",
+      "black"
+    ],
+    "python.analysis.autoImportCompletions": true,
+    "material-icon-theme.folders.associations": {
+      "venv":"",
+      ".vscode":"",
+      "docker":"docker",
+      "src":"",
+      "app":"python",
+      "core":"api",
+      "entities":"api",
+      "use_cases":"rules",
+      "interfaces":"rules",
+      "infrastructure":"pipe",
+      "log_reader":"pipe",
+      "message_broker":"pipe",
+      "tests":"tools",
+      "logs":""
+    }
+}

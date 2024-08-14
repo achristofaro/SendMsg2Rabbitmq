@@ -1,0 +1,8 @@
+[flake8]
+exclude = .git,__pycache__,docs/source/build,dist,*migrations*
+max-line-length = 120
+# E501 - line too long
+# W504 - line break after binary operator
+# W503 - line break before binary operator
+# E402 - module level import not at top of file
+ignore = E501, W504, W503, E402
